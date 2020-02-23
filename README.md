@@ -16,6 +16,8 @@ API to import CSV file
 # Explanation of solutions
 •	API to file import: API will accept a csv file, perform basic validation and save the file to the configured location and then dispatch the file name to the File Processing Handler. Handler will parse the CSV and Normalize with the help of CSVParser and Normalize service. With the help of DataStorage repository, Handler then save data to two different data storage.
 
+•	EF Core Code-First approach
+
 •	CSV data will be normalized as Products, Color & ColorCode (DeliveredIn, Q1, Size could be normalize as well)
 
 •	Two data storage: MS SQL Server 2014 & JSON file on the Disk
