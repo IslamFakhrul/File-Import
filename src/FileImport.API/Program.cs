@@ -42,7 +42,7 @@ namespace FileImport.API
                 {
                     webBuilder.UseKestrel(options =>
                     {
-                        options.Limits.MaxRequestBodySize = 209715200;
+                        options.Limits.MaxRequestBodySize = 52428800;
                     });
                     webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
                     webBuilder.ConfigureLogging((hostingContext, logging) =>

@@ -23,7 +23,7 @@ namespace FileImport.Persistence.Json
         {
             _logger.LogInformation("Convert list of object to json.");
             var serializeCsvData = JsonConvert.SerializeObject(normalizedCsvModel);
-
+            
             _logger.LogInformation("Write serialized data to json file.");
             await File.WriteAllTextAsync($"{_fileSettings.JsonFilePath}\\NormalizedCSVData.json", serializeCsvData);
         }

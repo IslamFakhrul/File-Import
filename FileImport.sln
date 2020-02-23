@@ -15,6 +15,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImport.Domain", "src\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImport.Persistence", "src\FileImport.Persistence\FileImport.Persistence.csproj", "{DBCFC194-5954-4503-8C0B-CF3078197A02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImport.Application.Tests", "tests\FileImport.Application.Tests\FileImport.Application.Tests.csproj", "{4B96B587-F298-49F6-846D-0FC466A9F9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileImport.Persistence.Tests", "tests\FileImport.Persistence.Tests\FileImport.Persistence.Tests.csproj", "{0302A2B1-51B8-46A0-AF14-E8779F010D03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF906A8C-4B5E-4138-9AC6-74A5F5BDAB93}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +46,14 @@ Global
 		{DBCFC194-5954-4503-8C0B-CF3078197A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBCFC194-5954-4503-8C0B-CF3078197A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBCFC194-5954-4503-8C0B-CF3078197A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B96B587-F298-49F6-846D-0FC466A9F9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B96B587-F298-49F6-846D-0FC466A9F9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B96B587-F298-49F6-846D-0FC466A9F9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B96B587-F298-49F6-846D-0FC466A9F9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0302A2B1-51B8-46A0-AF14-E8779F010D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0302A2B1-51B8-46A0-AF14-E8779F010D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0302A2B1-51B8-46A0-AF14-E8779F010D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0302A2B1-51B8-46A0-AF14-E8779F010D03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +63,8 @@ Global
 		{53A05EFE-C3A6-4C8E-975C-66FF3D895DEC} = {87A32050-6C56-4A38-86BF-3B5D05DCBBB4}
 		{D4401700-717E-4F16-80F7-1EF50AA20830} = {87A32050-6C56-4A38-86BF-3B5D05DCBBB4}
 		{DBCFC194-5954-4503-8C0B-CF3078197A02} = {87A32050-6C56-4A38-86BF-3B5D05DCBBB4}
+		{4B96B587-F298-49F6-846D-0FC466A9F9E1} = {EFC8FBA2-A370-47E4-A538-C33FF1DB1045}
+		{0302A2B1-51B8-46A0-AF14-E8779F010D03} = {EFC8FBA2-A370-47E4-A538-C33FF1DB1045}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07F15A97-8F65-4DF6-BD20-FF753B533D16}

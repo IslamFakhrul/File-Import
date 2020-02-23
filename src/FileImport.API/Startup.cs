@@ -7,7 +7,9 @@ using FileImport.Persistence.Json;
 using FileImport.Persistence.MultipleStorageServices;
 using FileImport.Persistence.MultipleStorageServices.Interfaces;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +18,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using System;
+using System.Net;
 
 namespace FileImport.API
 {
@@ -64,8 +67,6 @@ namespace FileImport.API
                 };
             });
 
-            services.AddControllers();
-
             services.AddSwaggerDocument(config =>
             {
                 config.PostProcess = document =>
@@ -78,8 +79,10 @@ namespace FileImport.API
 
             services.Configure<FormOptions>(x =>
             {
-                x.MultipartBodyLengthLimit = 209715200;
+                x.MultipartBodyLengthLimit = 52428800;
             });
+
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

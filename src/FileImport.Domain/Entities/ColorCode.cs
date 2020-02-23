@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace FileImport.Domain.Entities
 {
@@ -11,6 +12,7 @@ namespace FileImport.Domain.Entities
 
         public string Name { get; set; }
 
+        [JsonIgnore]
         public ICollection<Product> Products { get; private set; }
     }
 }

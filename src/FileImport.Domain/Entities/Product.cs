@@ -1,4 +1,6 @@
-﻿namespace FileImport.Domain.Entities
+﻿using Newtonsoft.Json;
+
+namespace FileImport.Domain.Entities
 {
     public class Product : BaseEntity
     {
@@ -8,6 +10,7 @@
 
         public int ColorCodeId { get; set; }
 
+        [JsonIgnore]
         public ColorCode ColorCode { get; set; }
 
         public string Description { get; set; }
@@ -24,6 +27,7 @@
 
         public int ColorId { get; set; }
 
+        [JsonIgnore]
         public Color Color { get; set; }
 
     }
