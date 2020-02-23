@@ -44,14 +44,14 @@ namespace FileImport.Api.Controllers
 
                 var fileExtension = Path.GetExtension(file.FileName).ToLowerInvariant();
 
-                if (fileExtension != "csv")
+                if (fileExtension != ".csv")
                 {
                     response.ResponseMessage = "Invalid file format.";
                 }
 
                 var filePath = $"{_fileSettings.CsvFilePath}\\{file.FileName}";
 
-                if (size > 0 && fileExtension == "csv")
+                if (size > 0 && fileExtension == ".csv")
                 {
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
