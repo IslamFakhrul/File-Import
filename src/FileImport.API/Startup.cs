@@ -5,6 +5,7 @@ using FileImport.Domain;
 using FileImport.Persistence.Database;
 using FileImport.Persistence.Json;
 using FileImport.Persistence.MultipleStorageServices;
+using FileImport.Persistence.MultipleStorageServices.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http.Features;

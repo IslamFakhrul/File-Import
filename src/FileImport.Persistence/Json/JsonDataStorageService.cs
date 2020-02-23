@@ -1,5 +1,5 @@
 ﻿using FileImport.Domain;
-using FileImport.Persistence.MultipleStorageServices;
+using FileImport.Persistence.MultipleStorageServices.Interfaces;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;

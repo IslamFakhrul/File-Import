@@ -1,7 +1,7 @@
 ﻿using EFCore.BulkExtensions;
 using FileImport.Domain;
 using FileImport.Domain.Entities;
-using FileImport.Persistence.MultipleStorageServices;
+using FileImport.Persistence.MultipleStorageServices.Interfaces;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;

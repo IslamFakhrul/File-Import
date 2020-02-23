@@ -1,4 +1,5 @@
 ﻿using FileImport.Domain;
+using FileImport.Persistence.MultipleStorageServices.Interfaces;
 using System;
 using System.Threading.Tasks;
 

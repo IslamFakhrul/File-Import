@@ -1,6 +1,7 @@
 ﻿using FileImport.Application.Interfaces;
 using FileImport.Application.Models;
 using FileImport.Persistence.MultipleStorageServices;
+using FileImport.Persistence.MultipleStorageServices.Interfaces;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
