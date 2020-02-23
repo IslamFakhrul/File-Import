@@ -4,11 +4,11 @@ API to import CSV file
 # Architectural overview
 •	Layered Architecture
  
-•	Presentation - FileImport.Api
+•	Presentation Layer (partial)- FileImport.Api
 
-•	Business Logic - FileImport.Application
+•	Business Logic Layer - FileImport.Application
 
-•	Core/Domain Model - FileImport.Domain
+•	Core/Domain Layer - FileImport.Domain
 
 •	Data Layer - FileImport.Persistence
 
@@ -19,8 +19,6 @@ API to import CSV file
 •	CSV data will be normalized as Products, Color & ColorCode (DeliveredIn, Q1, Size could be normalize as well)
 
 •	Two data storage: MS SQL Server 2014 & JSON file on the Disk
-
-•	Unit testing not done yet
 
 
 # Tools and technologies
@@ -52,8 +50,10 @@ API to import CSV file
 
 •	Separate validator to validate imported file using FluentValidation.
 
+•	Command Query Responsibility Segregation (CQRS) with MediatR could be use in fuiture to separate command & query depending on business decision to implement new features. 
+
 •	Scope to improve logging. 
 
-•	Unit testing not done. 
+•	Unit testing for Business logic (Application) & Data Access (Persistence) layer. 
 
 
