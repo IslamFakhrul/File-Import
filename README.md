@@ -24,6 +24,8 @@ API to import CSV file
 
 
 # Tools and technologies
+•	Visusal Studio 2019
+
 •	ASP.NET Core Web API 3.1
 
 •	Entity Framework Core 3.1
